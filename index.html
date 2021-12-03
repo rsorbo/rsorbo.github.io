@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8" />
+    <title>Great Race</title>
+</head>
+<style>
+.container {
+    width: 1024 px;
+    height: 800 px;
+    border:black ;
+    border-width: 1px;
+    position: absolute;
+    
+}
+
+</style>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with Github Pages.</p>
-<body>
+    
+    <div class="container" >
+        <img src="road.jpg">
+        
+        <div style="margin-top: -350px; " >
+            <img src="red.png" height = "75px" id="red" style="position: absolute; left:0;">
+        </div>
+        <div style="margin-top: 95px " >
+            <img src="green.png" height="75px" id="green" style="position: absolute; left: 0;">
+        </div>
+        
+    </div>
+    <div style="margin-left: 1100px; top: 0px;">
+            <img src="stop.png" height="250px" id="stop" onclick="LetsGo(document.getElementById('stop').src)">
+            <br/>
+            <h1 id="redWin" style="visibility: hidden; color: red; margin-left: 55px; padding-left: 0;"> Red Wins!</h1>
+            <h1 id="greenWin" style="visibility: hidden; color: green; margin-left: 55px; padding-left: 0">Green Wins!</h1>
+            <h1 id="tie" style="visibility: hidden; margin-left: 55px; padding-left:0">It's a Tie!</h1>
+            
+            <input type="button" value="Reset" id="reset" style="margin-left: 100px; visibility: hidden;" onclick="Reset(document.getElementById('reset'))">
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
 </html>
