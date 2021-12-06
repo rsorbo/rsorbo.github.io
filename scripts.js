@@ -40,6 +40,7 @@ function LetsGo(){
         resetBtn.style.visibility = "visible";
         greenWin.style.visibility = "visible";
     }
+    
     if (car1.distance == distanceToGo && car2.distance == distanceToGo)
     {
         console.log ("It's a tie!")
